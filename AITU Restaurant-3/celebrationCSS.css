@@ -1,0 +1,108 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #f4b083;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #000;
+            font-weight: bold;
+            margin-right: 15px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #f4b083;
+        }
+        nav a:hover {
+            background-color: #e59a69;
+        }
+
+        footer {
+            background-color: #f4b083;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 0 10px;
+        }
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .footer-column p, .footer-column ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        main {
+            background-color: #ffe5d1;
+            padding: 50px 10%;
+        }
+        .celebration-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fdd1a6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .celebration-content img {
+            max-width: 45%;
+            border-radius: 10px;
+        }
+        .celebration-description {
+            max-width: 50%;
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #ffdab3;
+            border-radius: 10px;
+        }
+
+        .reserve-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .reserve-container a {
+            background-color: #f4b083;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            display: inline-block;
+        }
+        .reserve-container a:hover {
+            background-color: #e59a69;
+        }
+        .reserve-container p {
+            margin-top: 10px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .reserve-container img.whatsapp-icon {
+            width: 24px;
+            height: 24px;
+        }

@@ -1,0 +1,91 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #f4b083;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #000;
+            font-weight: bold;
+            margin-right: 15px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #f4b083;
+        }
+        nav a:hover {
+            background-color: #e59a69;
+        }
+
+        
+        main {
+            background-color: #f8d7bc;
+            padding: 40px 20px;
+        }
+        .locations h2 {
+            text-align: center;
+            color: #000;
+            font-size: 32px;
+        }
+        .location-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .location-item {
+            background-color: #f4b083;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);  
+            text-align: center;
+        }
+        .location-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .location-info h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .location-info p {
+            font-size: 14px;
+            color: #333;
+        }
+        
+        footer {
+            background-color: #f4b083;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 0 10px;
+        }
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .footer-column p, .footer-column ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
