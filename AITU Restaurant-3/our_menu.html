@@ -5,78 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AITU Restaurant</title>
     <link href='https://fonts.googleapis.com/css?family=Kaushan%20Script' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="our_menuCSS.css" rel="stylesheet"/>
-        
-        
 </head>
 <body>
-
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #f4b083;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #ddd;
+    }
+    .logo {
+        width: 200px;
+        border-radius: 5px;
+        border: 2px solid #ddd;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        text-decoration: none;
+        padding: 10px 20px;
+        color: #000;
+        font-weight: bold;
+        margin: 0 10px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        background-color: #f4b083;
+    }
+    nav a:hover {
+        background-color: #e59a69;
+    }
+</style>
 <header>
-    <a href="Home.html"><img src="https://i.ibb.co.com/Xxv4w6d/Group-2.png" class="logo" alt="AITU Logo" style="width: 200px; display: block;"></a>
-    <nav>
-        <a href="our_menu.html">OUR MENU</a>
-        <a href="about_us.html">ABOUT US</a>
-        <a href="celebration.html">CELEBRATIONS</a>
-        <a href="locations.html">OUR LOCATIONS</a>
-        <a href="reserve.html">RESERVE A SEAT</a>
-    </nav>
+    <div class="container">
+        <button class="btn" onclick="window.location.href='Home.html'" style="border: none; background: none; padding: 0;">
+            <img src="https://i.ibb.co/Xxv4w6d/Group-2.png" class="logo" alt="AITU Logo">
+        </button>
+        <nav class="navbar navbar-expand-lg navbar-light mt-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="our_menu.html">Our Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="celebration.html">Celebrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="locations.html">Our Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserve.html">Reserve a Seat</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<main>
-    <section class="menu-section" id="menu">
-        <h2>Simple. Classic. Delicious.</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <figure>
-                    <img src="https://www.vkusnyblog.com/wp-content/uploads/2021/10/klukvennyi-tort-s-maskarpone.jpg" alt="Elephant at sunset" />
-                    <figcaption><h3>Cakes</h3></figcaption>
-                    </figure>
 
-                <!-- <img src="https://www.vkusnyblog.com/wp-content/uploads/2021/10/klukvennyi-tort-s-maskarpone.jpg" alt="Cakes"> -->
-                <!-- <h3>Cakes</h3> -->
-            </div>
-            <div class="menu-item">
-                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Yellow-Cupcakes_EXPS_BSFRTL23_41925_08_09_10b.jpg" alt="Cupcakes">
-                <h3>Cupcakes</h3>
-            </div>
-            <div class="menu-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2bplRLusR9j_dZdA1T8vo1WdKwDZToHnklQ&s" alt="Cookies">
-                <h3>Cookies</h3>
-            </div>
-            <div class="menu-item">
-                <img src="https://www.allrecipes.com/thmb/QYgcRLFqa5ntvlFYx6CD4ndPYCs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-recipe-10110-soft-christmas-cookies-01-4x3-c75844ae9722478cb58056e30593dbbd.jpg" alt="Seasonal">
-                <h3>Seasonal</h3>
+<main>
+    <section class="menu-section text-center py-5">
+        <div class="container">
+            <h2 class="mb-4">Simple. Classic. Delicious.</h2>
+            <div class="row g-4">
+                <!-- Карточка 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="https://www.vkusnyblog.com/wp-content/uploads/2021/10/klukvennyi-tort-s-maskarpone.jpg" class="card-img-top" alt="Cakes">
+                        <div class="card-body">
+                            <h5 class="card-title">Cakes</h5>
+                            <p class="card-text">Delicious homemade cakes made with love.</p>
+                            <a href="order.html" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Yellow-Cupcakes_EXPS_BSFRTL23_41925_08_09_10b.jpg" class="card-img-top" alt="Cupcakes">
+                        <div class="card-body">
+                            <h5 class="card-title">Cupcakes</h5>
+                            <p class="card-text">Freshly baked cupcakes with various flavors.</p>
+                            <a href="order.html" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2bplRLusR9j_dZdA1T8vo1WdKwDZToHnklQ&s" class="card-img-top" alt="Cookies">
+                        <div class="card-body">
+                            <h5 class="card-title">Cookies</h5>
+                            <p class="card-text">Crunchy and soft cookies for every occasion.</p>
+                            <a href="order.html" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img src="https://www.allrecipes.com/thmb/QYgcRLFqa5ntvlFYx6CD4ndPYCs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-recipe-10110-soft-christmas-cookies-01-4x3-c75844ae9722478cb58056e30593dbbd.jpg" class="card-img-top" alt="Seasonal">
+                        <div class="card-body">
+                            <h5 class="card-title">Seasonal</h5>
+                            <p class="card-text">Special seasonal treats to celebrate the holidays.</p>
+                            <a href="order.html" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
 
-<footer>
-    <div class="footer-column">
-        <img src="https://i.ibb.co.com/Xxv4w6d/Group-2.png" class="logo" alt="AITU Logo" style="width: 200px;">
-    </div>
-    <div class="footer-column">
-        <h3>Have a problem?</h3>
-        <p>Contact us at 999999@astanait.edu.kz</p>
-    </div>
-    <div class="footer-column">
-        <ul>
-            <li><a href="our_menu.html">Our menu</a></li>
-            <li><a href="about_us.html">About us</a></li>
-            <li><a href="celebration.html">Celebrations</a></li>
-            <li><a href="locations.html">Our Locations</a></li>
-            <li><a href="reserve.html">Reserve a seat</a></li>
-        </ul>
-    </div>
-    <div class="footer-column">
-        <h3>Authors:</h3>
-        <ul>
-            <li>Dulat Ali</li>
-            <li>Tugelbaev Galymzhan</li>
-            <li>Nurlan Aidyn</li>
-        </ul>
+
+<footer class="bg-warning py-3">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-3">
+                <img src="https://i.ibb.co.com/Xxv4w6d/Group-2.png" class="logo" alt="AITU Logo" style="width: 200px;">
+            </div>
+            <div class="col-md-3 mb-3">
+                <h3 class="mb-3">Have a problem?</h3>
+                <p>Contact us at 999999@astanait.edu.kz</p>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h3 class="mb-3">Links</h3>
+                <ul class="list-unstyled">
+                    <li><a class="text-dark" href="our_menu.html">Our Menu</a></li>
+                    <li><a class="text-dark" href="about_us.html">About Us</a></li>
+                    <li><a class="text-dark" href="celebration.html">Celebrations</a></li>
+                    <li><a class="text-dark" href="locations.html">Our Locations</a></li>
+                    <li><a class="text-dark" href="reserve.html">Reserve a Seat</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h3 class="mb-3">Authors:</h3>
+                <ul class="list-unstyled">
+                    <li>Dulat Ali</li>
+                    <li>Tugelbaev Galymzhan</li>
+                    <li>Nurlan Aidyn</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
